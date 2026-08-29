@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Diagram Import Test v2</title>
+<style>
+body{margin:0;font-family:Lato,Arial,sans-serif}
+.page{width:794px;height:1123px;background:#FAF6F0;position:relative;box-sizing:border-box;padding:76px 83px 83px 68px;overflow:hidden}
+.edge{position:absolute;top:76px;left:790px;width:4px;height:964px;background:#1B3A5C}
+h1{font-family:'DM Serif Display',Georgia,serif;font-size:18px;color:#1B3A5C;margin:0 0 12px;font-weight:400}
+p{font-size:10px;line-height:1.5;color:#1F2933;margin:0 0 10px}
+.rule{width:643px;height:1px;background:#B8924A;margin:10px 0 18px}
+
+.diag{position:relative;width:643px;height:310px;background:#F4EDE4;box-sizing:border-box}
+
+/* profile: rounded shape only, no nested text */
+.profile{position:absolute;left:44px;top:30px;width:236px;height:248px;
+  border:2px solid #1B3A5C;border-radius:120px 36px 36px 120px;background:#FAF6F0}
+/* straight guide line instead of a partial-border curve */
+.axis{position:absolute;left:70px;top:250px;width:196px;height:2px;background:#B8924A}
+.axlabL{position:absolute;left:66px;top:262px;font-size:9px;color:#6B635A}
+.axlabR{position:absolute;left:210px;top:262px;font-size:9px;color:#6B635A}
+
+/* dots = plain shapes, NO text inside */
+.dot{position:absolute;width:14px;height:14px;border-radius:7px;background:#1B3A5C}
+/* labels = separate standalone text, sitting beside each dot */
+.lab{position:absolute;font-size:11px;font-weight:700;color:#1B3A5C}
+
+.d1{left:78px;top:214px}  .l1{left:78px;top:190px}
+.d2{left:96px;top:180px}  .l2{left:96px;top:156px}
+.d3{left:124px;top:150px} .l3{left:124px;top:126px}
+.d4{left:162px;top:124px} .l4{left:162px;top:100px}
+.d5{left:74px;top:246px}  .l5{left:44px;top:222px}
+
+.leg{position:absolute;left:326px;top:34px;width:280px}
+.legrow{margin-bottom:17px}
+.legsym{font-size:11px;font-weight:700;color:#1B3A5C}
+.legtxt{font-size:10px;line-height:1.45;color:#1F2933;margin:1px 0 0}
+.legar{font-size:12px;direction:rtl;unicode-bidi:isolate;color:#6B635A;margin:1px 0 0}
+.cap{font-size:9px;color:#6B635A;font-style:italic;margin-top:12px}
+</style></head><body>
+
+<div class="page" data-document-role="page" data-label="M1 articulation diagram">
+  <div class="edge"></div>
+  <h1>Where these sounds are made</h1>
+  <p>Each of these five sounds is produced at a different point between the throat and the lips. The deeper the point, the further back in the throat you shape the sound.</p>
+  <div class="rule"></div>
+
+  <div class="diag">
+    <div class="profile"></div>
+    <div class="axis"></div>
+    <div class="axlabL">deeper</div>
+    <div class="axlabR">forward</div>
+
+    <div class="dot d5"></div><div class="lab l5">h</div>
+    <div class="dot d1"></div><div class="lab l1">3</div>
+    <div class="dot d2"></div><div class="lab l2">gh</div>
+    <div class="dot d3"></div><div class="lab l3">kh</div>
+    <div class="dot d4"></div><div class="lab l4">q</div>
+
+    <div class="leg">
+      <div class="legrow">
+        <p class="legsym">3 &mdash; 'Ayn</p>
+        <p class="legtxt">Deep in the throat, constricted.</p>
+        <p class="legar">عشرة</p>
+      </div>
+      <div class="legrow">
+        <p class="legsym">gh &mdash; Ghayn</p>
+        <p class="legtxt">Gargled, similar to a French r.</p>
+        <p class="legar">غادي</p>
+      </div>
+      <div class="legrow">
+        <p class="legsym">kh &mdash; Kha</p>
+        <p class="legtxt">Raspy, as in Scottish &ldquo;loch&rdquo;.</p>
+        <p class="legar">خويا</p>
+      </div>
+      <div class="legrow">
+        <p class="legsym">q &mdash; Qaf</p>
+        <p class="legtxt">A k made further back in the throat.</p>
+        <p class="legar">قهوة</p>
+      </div>
+      <div class="legrow">
+        <p class="legsym">h &mdash; Ha</p>
+        <p class="legtxt">Light and breathy, from the chest.</p>
+        <p class="legar">هادي</p>
+      </div>
+    </div>
+  </div>
+  <p class="cap">Positions are approximate and intended as a guide for practice, not a phonetic chart.</p>
+</div>
+
+</body></html>
