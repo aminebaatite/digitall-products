@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Diagram Import Test</title>
+<style>
+body{margin:0;font-family:Lato,Arial,sans-serif}
+.page{width:794px;height:1123px;background:#FAF6F0;position:relative;box-sizing:border-box;padding:76px 83px 83px 68px;overflow:hidden}
+.edge{position:absolute;top:76px;left:790px;width:4px;height:964px;background:#1B3A5C}
+h1{font-family:'DM Serif Display',Georgia,serif;font-size:18px;color:#1B3A5C;margin:0 0 12px;font-weight:400}
+p{font-size:10px;line-height:1.5;color:#1F2933;margin:0 0 10px}
+.rule{width:643px;height:1px;background:#B8924A;margin:10px 0 18px}
+
+/* ---- diagram ---- */
+.diag{position:relative;width:643px;height:300px;background:#F4EDE4;box-sizing:border-box}
+.profile{position:absolute;left:40px;top:26px;width:250px;height:248px;
+  border:2px solid #1B3A5C;border-radius:130px 40px 40px 130px;background:#FAF6F0}
+.throat{position:absolute;left:60px;top:150px;width:54px;height:110px;
+  border-left:2px solid #1B3A5C;border-bottom:2px solid #1B3A5C;border-radius:0 0 0 26px}
+.lips{position:absolute;left:268px;top:132px;width:26px;height:44px;
+  border:2px solid #1B3A5C;border-left:none;border-radius:0 22px 22px 0;background:#FAF6F0}
+
+.dot{position:absolute;width:22px;height:22px;border-radius:11px;background:#1B3A5C;
+  color:#FAF6F0;font-size:11px;font-weight:700;text-align:center;line-height:22px}
+.d3{left:66px;top:214px}
+.dgh{left:86px;top:176px}
+.dkh{left:112px;top:146px}
+.dq{left:150px;top:120px}
+.dh{left:60px;top:250px}
+
+.leg{position:absolute;left:330px;top:30px;width:270px}
+.legrow{margin-bottom:16px}
+.legsym{display:inline-block;width:24px;height:24px;border-radius:12px;background:#1B3A5C;
+  color:#FAF6F0;font-size:11px;font-weight:700;text-align:center;line-height:24px;vertical-align:top}
+.legtxt{display:inline-block;width:230px;margin-left:10px;font-size:10px;line-height:1.45;color:#1F2933}
+.legtxt b{color:#1B3A5C}
+.legar{font-size:12px;direction:rtl;unicode-bidi:isolate;color:#1F2933}
+.cap{font-size:9px;color:#6B635A;font-style:italic;margin-top:12px}
+</style></head><body>
+
+<div class="page" data-document-role="page" data-label="M1 articulation diagram">
+  <div class="edge"></div>
+  <h1>Where these sounds are made</h1>
+  <p>Each of these five sounds is produced at a different point between the throat and the lips. The deeper the point, the further back in the throat you shape the sound.</p>
+  <div class="rule"></div>
+
+  <div class="diag">
+    <div class="profile"></div>
+    <div class="throat"></div>
+    <div class="lips"></div>
+    <div class="dot dh">h</div>
+    <div class="dot d3">3</div>
+    <div class="dot dgh">gh</div>
+    <div class="dot dkh">kh</div>
+    <div class="dot dq">q</div>
+
+    <div class="leg">
+      <div class="legrow"><span class="legsym">3</span><span class="legtxt"><b>'Ayn</b> — deep in the throat, constricted. <span class="legar">عشرة</span></span></div>
+      <div class="legrow"><span class="legsym">gh</span><span class="legtxt"><b>Ghayn</b> — gargled, like a French r. <span class="legar">غادي</span></span></div>
+      <div class="legrow"><span class="legsym">kh</span><span class="legtxt"><b>Kha</b> — raspy, as in Scottish "loch". <span class="legar">خويا</span></span></div>
+      <div class="legrow"><span class="legsym">q</span><span class="legtxt"><b>Qaf</b> — a k made further back. <span class="legar">قهوة</span></span></div>
+      <div class="legrow"><span class="legsym">h</span><span class="legtxt"><b>Ha</b> — light and breathy, from the chest. <span class="legar">هادي</span></span></div>
+    </div>
+  </div>
+  <p class="cap">Positions are approximate and intended as a guide for practice, not a phonetic chart.</p>
+</div>
+
+</body></html>
